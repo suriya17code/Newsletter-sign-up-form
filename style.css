@@ -1,0 +1,183 @@
+
+/* :root {
+    --Tomato: #ff6257;
+ --dark-slate-grey: hsl(234, 29%, 20%);
+ --Charcoal-Grey: hsl(235, 18%, 26%);
+ --Grey: hsl(231, 7%, 60%);
+ --White: hsl(0, 0%, 100%);
+};
+ */
+
+body{
+    background-color:#36384e;
+
+}
+.cover{
+     display: flex; 
+     flex-direction: row;  
+     justify-content: center;
+     align-items: center; 
+     
+    
+}
+
+.container{
+    display: flex;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    
+}
+.message{
+margin: 45px 25px 45px 25px;
+max-width: 380px;
+text-align: left;
+
+}
+
+.text  {
+   color: hsl(234, 29%, 20%);
+   font-family:  sans-serif;
+   font-weight: 700;
+   justify-content: center;
+   align-items: center;
+   padding-left: 5px;
+}
+.text h1{
+    font-size: 55px;
+    justify-content: center;
+}
+.text p{
+    font-size: 15px;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+li{
+    text-align:justify;
+    
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-weight: 400;
+   list-style-position: left;
+    list-style-image: url(/assets/images/icon-list.svg);
+}
+.form{
+    display: flex;
+   flex-wrap: wrap;
+
+}
+.email{
+ padding: 15px  ;
+border-radius: 5px;
+width: 330px;
+margin-bottom: 25px;
+border-width: 1px;
+outline: none;
+}
+#err-mail{
+    padding-top: 25px;
+    color: #ff6257;
+}
+.input-error {  
+    border: 1px solid #ff6257;
+    color: rgb(14, 14, 14);
+    background-color: rgb(255, 187, 187);
+}
+.email:focus{
+border-color: aquamarine;
+}
+.btn{
+padding: 15px  ;
+border-radius: 5px;
+ width: 360px;
+margin-bottom: 15px;
+border-width: 1px;
+color: white;
+background-color: rgb(18, 18, 43);
+border: none;
+}
+.sub{
+    display: flex;
+    justify-content:space-between;
+    padding-right: 22px;
+}
+
+.btn:hover{
+    background-color:#ff6257;
+
+}
+.img{
+    width: 380px;
+    height:max-content;
+}
+
+
+
+
+
+.success{
+    display: none;
+    line-height: 1.2;
+ padding: 35px;
+ background-color: white;
+ border-radius: 15px;
+ width: 280px;
+ margin: 150px;
+ font-family: Roboto, sans-serif;
+}
+.success button{
+    padding: 15px  ;
+border-radius: 5px;
+ width: 260px;
+margin-bottom: 15px;
+border-width: 1px;
+color: white;
+background-color: rgb(18, 18, 43);
+border: none;
+}
+.success button:hover{
+    background-color:#ff6257;
+}
+.success .img2{
+    width: 55px;
+}
+#useremail{
+    font-weight: 700;
+}
+
+@media (max-width:825px) {
+ 
+    .container {
+        display: block;
+        padding: 0;
+        background-color: white;
+        border-radius: 15px;
+    }
+.message{
+    grid-row: 2;
+}
+    .text ul li {
+        margin-bottom: 1rem;
+    }
+
+    .cover {
+        flex-direction: column; /* Change flex direction to column */
+    }
+
+    .img {
+        width: 100%;
+        order: -1; /* Move the image to the top */
+        margin-bottom: 20px; /* Add some spacing between the image and the form */
+    }
+    .success.active{
+        padding: 35px;
+ background-color: white;
+ border-radius: 15px;
+ width: 280px;
+ margin: 150px;
+ font-family: Roboto, sans-serif;
+flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+}
